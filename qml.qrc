@@ -1,5 +1,8 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/Main">
         <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/Load_Page">
+        <file>Load_Page.qml</file>
     </qresource>
 </RCC>
