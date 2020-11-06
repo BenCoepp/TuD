@@ -5,4 +5,11 @@
     <qresource prefix="/Load_Page">
         <file>Load_Page.qml</file>
     </qresource>
+    <qresource prefix="/Main_Page">
+        <file>Main_Page.qml</file>
+    </qresource>
+    <qresource prefix="/Components">
+        <file>Database/Database.js</file>
+        <file>Flicker/Flicker.qml</file>
+    </qresource>
 </RCC>

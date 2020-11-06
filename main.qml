@@ -14,6 +14,6 @@ ApplicationWindow {
     }
 
     Component.onCompleted: {
-        contentFrame.replace("")
+        contentFrame.replace("qrc:/Main_Page/Main_Page.qml")
     }
 }
