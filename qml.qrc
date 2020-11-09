@@ -11,5 +11,6 @@
     <qresource prefix="/Components">
         <file>Database/Database.js</file>
         <file>Flicker/Flicker.qml</file>
+        <file>BlowUp_Button/BlowUp_Button.qml</file>
     </qresource>
 </RCC>

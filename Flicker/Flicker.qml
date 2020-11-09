@@ -1,5 +1,9 @@
-import QtQuick 2.0
+import QtQuick 2.9
+import QtQuick.Controls 2.5
 
-Item {
-
+Rectangle{
+    id: root
+    width: 400
+    height: 400
+    color: "red"
 }
