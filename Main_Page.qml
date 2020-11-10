@@ -16,5 +16,7 @@ Item {
     BlowUp_Button{
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
+        maxWidth: parent.width
+        maxHeight: parent.height
     }
 }

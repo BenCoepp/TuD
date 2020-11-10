@@ -8,14 +8,24 @@ MouseArea{
     height: 50
     cursorShape: Qt.PointingHandCursor
 
+    property var maxWidth: 0
+    property var maxHeight: 0
+
     Rectangle{
         id: blowUp_Rec
-        anchors.fill: parent
+        width: parent.width
+        height: parent.height
+        anchors.verticalCenter: parent.verticalCenter
         color: "green"
     }
-
+    ParallelAnimation {
+            running: false
+            id: anBlow
+            NumberAnimation { target: blowUp_Rec; property: "width"; to: maxWidth; duration: 250; easing.type: Easing.InOutQuad }
+            NumberAnimation { target: blowUp_Rec; property: "height"; to: maxHeight; duration: 250; easing.type: Easing.InOutQuad }
+        }
     onClicked: {
-        root.width = parent.height
-        root.height = parent.width
+        console.log("test")
+        anBlow.start()
     }
 }
