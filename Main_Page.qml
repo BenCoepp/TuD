@@ -18,5 +18,7 @@ Item {
         anchors.left: parent.left
         maxWidth: parent.width
         maxHeight: parent.height
+        bgColor: "green"
+        bgColorIcon: "blue"
     }
 }

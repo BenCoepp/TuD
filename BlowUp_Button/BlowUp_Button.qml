@@ -11,12 +11,33 @@ MouseArea{
     property var maxWidth: 0
     property var maxHeight: 0
 
+    property var bgColor: ""
+    property var bgColorIcon: ""
+    property url iconSource: ""
+
     Rectangle{
         id: blowUp_Rec
         width: parent.width
         height: parent.height
         anchors.verticalCenter: parent.verticalCenter
-        color: "green"
+        color: bgColor
+
+        Rectangle{
+            id: iconRec
+            width: parent.height
+            height: parent.height
+            color: bgColorIcon
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+
+            Image{
+                id: icon
+                anchors.centerIn: parent
+                width: parent.width-4
+                height: parent.height-4
+                source: iconSource
+            }
+        }
     }
     ParallelAnimation {
             running: false
@@ -27,5 +48,6 @@ MouseArea{
     onClicked: {
         console.log("test")
         anBlow.start()
+        iconRec.visible = false
     }
 }
