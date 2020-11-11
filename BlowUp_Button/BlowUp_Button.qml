@@ -15,12 +15,22 @@ MouseArea{
     property var bgColorIcon: ""
     property url iconSource: ""
 
+    property var iconText: ""
+
     Rectangle{
         id: blowUp_Rec
         width: parent.width
         height: parent.height
         anchors.verticalCenter: parent.verticalCenter
         color: bgColor
+
+        Label{
+            id: iconTitel
+            font.bold: true
+            font.pointSize: 18
+            anchors.centerIn: parent
+            text: iconText
+        }
 
         Rectangle{
             id: iconRec
@@ -49,5 +59,6 @@ MouseArea{
         console.log("test")
         anBlow.start()
         iconRec.visible = false
+        iconTitel.visible = false
     }
 }

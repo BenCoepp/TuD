@@ -26,13 +26,24 @@ Item {
                     version: 1
                 }
             }
+            header: Image {
+                id: img
+                source: "file"
+                width: parent.width
+                height: parent.width
+                antialiasing: true
+            }
+            headerPositioning: ListView.OverlayHeader
             delegate: Rectangle{
                 width: parent.width
                 height: 1000
                 color: "#2C3E50"
+                radius: 20
+                anchors.top: parent.top
+                anchors.topMargin: 20
                 BlowUp_Button{
                     anchors.top: parent.top
-                    anchors.topMargin: parent.width+50
+                    anchors.topMargin: 50
                     anchors.left: parent.left
                     maxWidth: parent.width
                     maxHeight: parent.height
