@@ -9,7 +9,7 @@ Item {
 
     Rectangle{
         anchors.fill: parent
-        color: "blue"
+        color: "#2C3E50"
     }
 
     ScrollView{
@@ -29,15 +29,15 @@ Item {
             delegate: Rectangle{
                 width: parent.width
                 height: 1000
-                color: "blue"
+                color: "#2C3E50"
                 BlowUp_Button{
                     anchors.top: parent.top
                     anchors.topMargin: parent.width+50
                     anchors.left: parent.left
                     maxWidth: parent.width
                     maxHeight: parent.height
-                    bgColor: "green"
-                    bgColorIcon: "blue"
+                    bgColor: "#18BC9E"
+                    bgColorIcon: "#FE9000"
                 }
             }
         }

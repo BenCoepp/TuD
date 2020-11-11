@@ -7,7 +7,7 @@ Item {
 
     Rectangle{
         anchors.fill: parent
-        color: "blue"
+        color: "#2C3E50"
 
         Rectangle{
             id: loc
@@ -15,7 +15,7 @@ Item {
             radius: 99
             width: 200
             height: 200
-            color: "green"
+            color: "#18BC9E"
         }
 
         BusyIndicator{
